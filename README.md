@@ -128,7 +128,7 @@ jpeg compression.
 
 \#### Outline of project
 
-\- https://github.com/jwcitta/Capstone-Project()
+\- https://github.com/jwcitta/Capstone-Project
 
 \-
 https://github.com/jwcitta/Capstone-Project/blob/main/capstone_github.ipynb
