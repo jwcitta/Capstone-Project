@@ -162,7 +162,7 @@ is not as large as originally planned, and it currently only contains
 data from three different garage doors in the
 sample set. A larger dataset should include images from a greater
 variety of door types, more
-dynamic lighting levels, a broader range motion around the garage (i.e.,
+dynamic lighting levels, a broader range of motion around the garage (i.e.,
 people moving around),
 as well as potential objects blocking the camera's view. This is all
 needed to expand the model's
