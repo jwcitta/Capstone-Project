@@ -22,13 +22,10 @@ Why should anyone care about this question?
 
 The answer to this question provides information that typical homeowner
 customer regularly
-
 wants to know - is their garage shut and secure, or did they
 accidentally leave the door open?
-
 Having a method to determine this that is both independent of the garage
 door opener and also
-
 does not require attaching a sensor to the door is quite desirable.
 Additionally, monitoring that area regardless of whether the door is
 open or closed may also be desirable for other purposes as well, such as
@@ -200,7 +197,6 @@ While the initial tests of this model performed better than expected
 under the conditions outlined
 for this project, there are countless opportunities to enhance its
 performance under more robust
-
 and dynamic conditions in future. I believe this model holds tremendous
 commercial potential
 once these additional enhancements are fully explored.
