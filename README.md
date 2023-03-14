@@ -238,6 +238,6 @@ once these additional enhancements are fully explored.
 \-
 https://github.com/jwcitta/Capstone-Project/blob/main/capstone_github.ipynb
 
-\- \[Link to notebook 3\]()
+\- \[Link to notebook 3\]
 
 \##### Contact and Further Information
