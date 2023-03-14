@@ -14,7 +14,6 @@ camera that monitors the door opening of the garage. The digital video
 camera is then able to classify if there is a door fully present (and
 thus is completely closed), if the door opening is clear (and thus is
 open), or if it somewhere in-
-
 Between. This project thoroughly explores how this answer is determined.
 
 \#### Rationale
@@ -50,22 +49,16 @@ What data will you use to answer your question?
 
 Data is sourced from high resolution (1080p) 24-bit color video feeds
 located in customers';
-
 garages; in each case, the camera is mounted on the garage door opener,
 aiming down and out
-
 toward the garage door. My employer already had a set of data from Beta
 customers available.
-
 Video recorded from these cameras was converted to still images for the
 purpose of this
-
 capstone project. The images were then downsized (using ff-mpeg/opencv)
 to 160x90 pixels
-
 and turned to single channel grayscale images to allow for faster
 processing given limitations in
-
 available GPU RAM. The images were then labeled manually.
 
 \#### Methodology
@@ -90,7 +83,6 @@ a softmax activation to
 classify if the door is fully visible (and thus closed), missing (and
 thus open), or somewhere in-between. Train the model with thousands of
 these labeled images. Test the newly trained
-
 model, then validate the results.
 
 \#### Results
@@ -110,10 +102,8 @@ height="2.201831802274716in"}
 
 The graphs from the test data show that going past 60 epochs with this
 model starts to reduce
-
 the accuracy; thus, it is just wasting computational time to go beyond
 that. 60 epochs of training
-
 outperforms both 30 epochs, along with 120 or 240 epochs as well. With
 an average accuracy of 99.590 and a standard deviation of 0.245 across
 five folds, the model has excellent performance using 60 epochs.
@@ -148,7 +138,6 @@ positives, the model did quite well, even in the door movement state.
 
 That said, this initial design only works on a single door at a time, so
 this is an important
-
 limitation of this current state model.
 
 \#### Further Validation
@@ -169,39 +158,28 @@ predicted both of the validation samples correctly.
 
 Despite the impressive performance of the model thus far, there are some
 key enhancements
-
 recommended for the future state to ensure optimal results.
 
 First, additional training data should be obtained. The existing dataset
 is not as large as originally planned, and it currently only contains
 data from three different garage doors in the
-
 sample set. A larger dataset should include images from a greater
 variety of door types, more
-
 dynamic lighting levels, a broader range motion around the garage (i.e.,
 people moving around),
-
 as well as potential objects blocking the camera's view. This is all
 needed to expand the model's
-
 performance around a more dynamic set of scenarios.
-
 Additionally, the current model setup cannot yet handle having two doors
 opening independently
-
 of each other if both doors are in the field of view of the same camera.
 There was not enough
-
 data available for situations where this was occurring to properly train
 the model, so this data
-
 was excluded from the model in this initial phase. Additionally, the
 list of potential outcomes in
-
 the manual labeling process will also need to be expanded to handle the
 labeling of more than
-
 one door position once the model is extended to include those
 situations.
 
@@ -213,22 +191,18 @@ would be interesting to see how this impacts the overall results.
 
 Finally, further tweaking of the model layers should also be explored as
 well; it is currently a
-
 fairly simplified model, and thus would likely need to go deeper to
 handle a larger dataset with
-
 more features to learn from, so additional sophistication in this regard
 is warranted.
 
 While the initial tests of this model performed better than expected
 under the conditions outlined
-
 for this project, there are countless opportunities to enhance its
 performance under more robust
 
 and dynamic conditions in future. I believe this model holds tremendous
 commercial potential
-
 once these additional enhancements are fully explored.
 
 \#### Outline of project
